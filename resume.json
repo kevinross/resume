@@ -55,7 +55,7 @@
 				},
 				{	"project_name": "kevinross/resume",
 					"tagline": "This document",
-					"description": ["Using github:prat0318/json_resume, generate multiple formats of my resume and put them all online", "Consists of a makefile and a couple of templates derived from the original source of json_resume"]
+					"description": ["Using github:prat0318/json_resume, generate multiple formats of my resume and put them online", "Consists of a makefile and a couple of templates derived from the original source of json_resume"]
 				}
 			]
 		},
