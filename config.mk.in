@@ -1,5 +1,5 @@
-NAME="Your Name"
-PDF_Prefix="pdf filename prefix"	# should probably be "Your_Name" to make the filename be "Your_Name_Resume.pdf"
-USER="your ssh username here"
-SERVER="your ssh server here"
-PATH="/path/to/docroot/here"
+# should probably be "Your_Name" to make the filename be "Your_Name_Resume.pdf"
+PDF_PREFIX=pdf filename prefix
+USER=your ssh username here
+SERVER=your ssh server here
+PATH=/path/to/docroot/here
