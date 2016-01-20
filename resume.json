@@ -52,6 +52,10 @@
 					"project_name": "kevinross/techreport",
 					"tagline": "Technical reports are anti-DRY",
 					"description": ["Wrote a makefile that brought together a bunch of disparate tools to reduce the workload of writing a technical report"]
+				},
+				{	"project_name": "kevinross/resume",
+					"tagline": "This document",
+					"description": ["Using github:prat0318/json_resume, generate multiple formats of my resume and put them all online", "Consists of a makefile and a couple of templates derived from the original source of json_resume"]
 				}
 			]
 		},

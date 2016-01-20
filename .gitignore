@@ -1,3 +1,4 @@
+config.mk
 *.pyc
 *.pdf
 references.txt
@@ -6,3 +7,4 @@ resume
 coverletter
 .tmp_resume
 default_*.mustache
+templates/html/base

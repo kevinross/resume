@@ -24,7 +24,7 @@
 		</div>
 	</div>
 	
-	<h1 class="emphnext">{{firstname}} {{familyname}} <a href="/Kevin_Ross_Resume.pdf"><div class="fa fa-file-pdf-o"></div></a></h1>
+	<h1 class="emphnext">{{firstname}} {{familyname}} <a href="/PDFPREFIX_Resume.pdf"><div class="fa fa-file-pdf-o"></div></a></h1>
 	{{#stars}}
 	<span class="stars" style="clear:left">
 		 {{#items}}
