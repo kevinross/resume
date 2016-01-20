@@ -1,42 +1,4 @@
-{{=<% %>=}}
-\documentclass[11pt,letterpaper]{moderncv}
-
-\moderncvtheme[black]{classic}
-
-\usepackage[utf8]{inputenc}
-\usepackage[scale=0.8]{geometry}
-\usepackage{needspace}
-
-<%#bio_data%>
-\firstname{<%firstname%>}
-\familyname{\mbox{<%familyname%>}}
-\address{<%address%>}
-\title{\small <%#stars%><%#items%><%name%><%^last%> $\star$ <%/last%><%/items%><%/stars%>}
-<%#phone%>\phone{<%.%>}<%/phone%>
-<%#email%>\email{<%.%>}<%/email%>
-<%#raw_website%>\homepage{<%& .%>}<%/raw_website%>
-<%#linkedin_id%>\social[linkedin]{<%& .%>}<%/linkedin_id%>
-<%#github_id%>\social[github]{<%& .%>}<%/github_id%>
-
-% the ConTeXt symbol
-\def\ConTeXt{%
-  C%
-  \kern-.0333emo%
-  \kern-.0333emn%
-  \kern-.0667em\TeX%
-  \kern-.0333emt}
-
-% command and color used in this document, independently from moderncv 
-\definecolor{see}{rgb}{0.5,0.5,0.5}% for web links
-\newcommand{\up}[1]{\ensuremath{^\textrm{\scriptsize#1}}}% for text subscripts
-\renewcommand{\labelitemi}{$\circ$}
-
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
-\begin{document}
-\maketitle
-\vspace*{-1cm}
+header
 
 <%#summary%>
 \section{\textsc{Qualifications}}

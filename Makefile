@@ -18,9 +18,14 @@ default_%.mustache: sections $(TPL_FILES) templates/html/base
 resume.pdf: resume.json default_tex.mustache
 	GEM_HOME=/usr/local/gems json_resume convert --template=default_tex.mustache --out=tex_pdf resume.json
 
-references.pdf: references.txt
-	pdflatex references.txt
-	rm references.out references.log references.aux
+references.mustache: templates/tex/references templates/tex/header
+	python make_references.py tex
+
+resume_references.json: resume.json references.json
+	python make_references.py json
+	
+references.pdf: references.mustache resume_references.json
+	GEM_HOME=/usr/local/gems json_resume convert --template=references.mustache --out=tex_pdf resume_references.json
 
 resume/page.html: resume.json default_html.mustache
 	GEM_HOME=/usr/local/gems json_resume convert --template=default_html.mustache --out=html resume.json

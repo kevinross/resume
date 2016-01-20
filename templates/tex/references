@@ -1,0 +1,14 @@
+header
+
+\section{\textsc{References}}
+
+\begin{verbatim}
+<%#references%>
+    <%name%>
+        Relation: <%relation%>, <%company%>
+<%#contact%>    <%method%>: <%address%><%/contact%>
+
+<%/references%>
+\end{verbatim}
+\end{document}
+<%/bio_data%>

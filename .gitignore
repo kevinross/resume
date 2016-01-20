@@ -1,10 +1,11 @@
 config.mk
 *.pyc
 *.pdf
-references.txt
 *.zip
 resume
 coverletter
 .tmp_resume
-default_*.mustache
+*.mustache
 templates/html/base
+references.json
+resume_references.json
