@@ -25,7 +25,10 @@ resume_references.json: resume.json references.json
 	python make_references.py json
 	
 references.pdf: references.mustache resume_references.json
+	mv resume.pdf actual_resume.pdf
 	GEM_HOME=/usr/local/gems json_resume convert --template=references.mustache --out=tex_pdf resume_references.json
+	mv resume.pdf references.pdf
+	mv actual_resume.pdf resume.pdf
 
 resume/page.html: resume.json default_html.mustache
 	GEM_HOME=/usr/local/gems json_resume convert --template=default_html.mustache --out=html resume.json
