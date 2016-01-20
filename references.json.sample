@@ -1,0 +1,14 @@
+[
+	{"name": "Name Here", 
+	"relation": "Relation Here", 
+	"company": "Company Here", 
+	"contact": {"method": "Method Here (Email/phone/etc)", 
+		    "address": "Email/Phone/etc"}
+	},
+	{"name": "Name",
+	"relation": "Relation",
+	"company": "Company",
+	"contact": {"method": "Method",
+		    "address": "Address"}
+	}
+]
