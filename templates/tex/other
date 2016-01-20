@@ -1,0 +1,19 @@
+<%#other_projects%>
+\section{\textsc{Other Projects}}
+	<%#items%>
+		\cvitem{\textbullet}{<%& headline%>}
+		\vspace*{-0.15cm}
+		\cvitem{}{
+			{\footnotesize 
+				\begin{itemize}
+				<%#points%>\item <%& .%><%/points%>	
+				<%#technology_used%>
+				\item Technologies used:
+				<%#tools%><%name%><%^last%>, <%/last%><%/tools%>
+				<%/technology_used%>
+				\end{itemize}
+			}
+		}
+		\vspace*{-0.5cm}
+	<%/items%>
+<%/other_projects%>

@@ -1,0 +1,22 @@
+	{{#other_projects}}
+	<h2><div class="icon-gear icon-square"></div> ##other_projects##</h2>
+	<ul>
+		{{#items}}
+		<li>
+			{{{headline}}}
+			<ul>
+				{{#points}}
+				<li>{{{.}}}</li>
+				{{/points}}
+				{{#technology_used}}
+				<li>##technology_used##: 
+					{{#tools}}
+					<span class="label label-default">{{name}}</span>
+					{{/tools}}
+				</li>
+				{{/technology_used}}			
+			</ul>
+		</li>
+		{{/items}}
+	</ul>
+	{{/other_projects}}

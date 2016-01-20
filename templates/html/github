@@ -1,0 +1,15 @@
+	{{#github_projects}}
+	<h2><div class="icon-github icon-square"></div> ##github_projects##</h2>
+	<ul>
+	{{#details}}
+		<li><a href="https://github.com/{{project_name}}">{{project_name}}</a>
+		{{#tagline}} &raquo; {{{tagline}}}{{/tagline}}
+			<ul>
+				{{#description}}
+				<li>{{{.}}}</li>
+				{{/description}}
+			</ul>
+		</li>
+	{{/details}}
+	</ul>
+	{{/github_projects}}

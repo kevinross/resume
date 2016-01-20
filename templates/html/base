@@ -1,0 +1,164 @@
+<link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="public/css/screen.css" />
+<link rel="stylesheet" type="text/css" href="public/css/mobile.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<div id="page">
+{{#bio_data}}
+	<div id="top-contact">
+		<div class="contact-details">
+			{{#email}}
+			<div class="fa fa-envelope"></div> {{email}}<br />
+			{{/email}}
+			{{#phone}}
+			<div class="fa fa-phone-square"></div> {{phone}}<br />
+			{{/phone}}
+			{{#website}}
+			<div class="fa fa-globee"></div><a href="{{website}}"> {{website}}</a>
+			{{/website}}
+			{{#linkedin_id}}
+			<div class="fa fa-linkedin-square"></div> {{linkedin_id}}<br />
+			{{/linkedin_id}}
+			{{#github_id}}
+			<div class="fa fa-github-square"></div> {{github_id}}<br />
+			{{/github_id}}
+		</div>
+	</div>
+	
+	<h1 class="emphnext">{{firstname}} {{familyname}} <a href="/Kevin_Ross_Resume.pdf"><div class="fa fa-file-pdf-o"></div></a></h1>
+	{{#stars}}
+	<span class="stars" style="clear:left">
+		 {{#items}}
+		 {{name}} {{^last}}<div class="icon-star-o icon-star"></div>{{/last}}
+		 {{/items}}
+	</span>
+	{{/stars}}
+	<br/><br/>
+
+	{{#summary}}
+	<h2><div class="icon-user icon-square"></div> ##summary##</h2>
+	<ul>
+		{{#points}}
+		<li>{{{.}}}</li>
+		{{/points}}
+	</ul>
+	{{/summary}}
+	<br/><br/><br/>
+	<hr/>
+section1
+	<hr/>
+section2
+	<hr/>
+section3
+	<hr/>
+section4
+	{{#acad_achievements}}
+	<h2><div class="icon-bookmark icon-rect"></div> ##acad_achievements##</h2>
+	<ul>
+		{{#items}}
+		<li>{{{.}}}</li>
+		{{/items}}
+	</ul>
+	{{/acad_achievements}}
+	<hr/>
+section5
+
+	{{#grad_courses}}
+	<h2><div class="icon-institution icon-square"></div> ##grad_courses##</h2>
+	<table class="table education">
+		{{#rows}}
+		<tr>
+			{{#columns}}
+			<td><a href="{{url}}">{{name}}</a></td>
+			{{/columns}}
+		</tr>
+		{{/rows}}
+	</table>
+	{{/grad_courses}}
+
+	{{#undergrad_courses}}
+	<h2><div class="icon-bookmark icon-square"></div> ##undergrad_courses##</h2>
+	<table class="table education">
+		{{#rows}}
+		<tr>
+			{{#columns}}
+			<td><a href="{{url}}">{{name}}</a></td>
+			{{/columns}}
+		</tr>
+		{{/rows}}
+	</table>
+	{{/undergrad_courses}}
+
+	{{#research_experience}}
+	<h2><div class="icon-edit icon-square"></div> ##research_experience##</h2>
+	<ul>
+		{{#items}}
+		<li>
+			{{title}}, {{{organisation}}}
+			<span class="right">({{from}} – {{to}})</span>
+			<ul>
+				{{#points}}
+				<li>{{{.}}}</li>
+				{{/points}}
+			</ul>
+		</li>
+		{{/items}}
+	</ul>
+	{{/research_experience}}
+
+	{{#patents}}
+	<h2><div class="icon-file icon-square"></div> ##patents##</h2>
+	<ul>
+		{{#items}}
+		<li>{{patent_id}} 
+			<a href="{{url}}">{{title}}</a> 
+			{{#issuance_date}}, ##issuance## {{issuance_date}}{{/issuance_date}}.
+		</li>
+		{{/items}}
+	</ul>
+	{{/patents}}
+
+	{{#papers}}
+	<h2><div class="icon-edit icon-square"></div> ##papers##</h2>
+	<ul>
+		{{#items}}
+		<li>{{authors}} 
+			<a href="{{url}}">{{title}},</a> 
+			 {{{misc}}}.
+		</li>
+		{{/items}}
+	</ul>
+	{{/papers}}
+
+	{{#memberships}}
+	<h2><div class="icon-globe icon-square"></div> ##memberships##</h2>
+	<ul>
+		{{#committees}}
+		<li>{{{.}}}</li>
+		{{/committees}}
+	</ul>	
+	{{/memberships}}
+
+section6
+
+	<br />
+	<div id="bottom-contact" text-size="80%">
+		{{#email}}
+		<div class="icon-envelope icon-square"></div> {{email}}<br />
+		{{/email}}
+		{{#phone}}
+		<div class="icon-phone icon-square"></div> {{phone}}<br />
+		{{/phone}}
+		{{#website}}
+		<div class="icon-globe icon-square"></div><a href="{{website}}"> {{website}}</a>
+		{{/website}}
+	</div>
+</div>
+
+{{/bio_data}}
+
+{{#settings}}
+	{{#icons}}
+	<script src="public/js/grunticon.js"></script>
+	{{/icons}}
+{{/settings}}
+</div><!-- End Page -->

@@ -1,0 +1,12 @@
+	{{#skills}}
+	<h2><div class="icon-th-list icon-square"></div> ##skills##</h2>
+	<ul class="languages">
+		{{#details}}
+		<li>{{type}}: 
+			{{#items}}
+			<span class="label label-default">{{name}}</span>
+			{{/items}}
+		</li>
+		{{/details}}
+	</ul>
+	{{/skills}}

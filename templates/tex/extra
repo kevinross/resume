@@ -1,0 +1,6 @@
+<%#extra_curricular%>
+\section{\textsc{Extra Curricular}}
+	<%#items%>
+		\cvitem{\textbullet}{<%& .%>}
+	<%/items%>
+<%/extra_curricular%>

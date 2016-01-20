@@ -1,0 +1,17 @@
+<%#experience%>
+\section{\textsc{Professional Experience}}
+%    \cventry{years}{degree/job title}{institution/employer}{localization}{grade}{description}
+	<%#items%>
+		\cventry{<%from%> - <%to%>}{<%title%>}{<%organisation%>}{<%location%>}{}{
+			{\footnotesize 
+				\begin{itemize}
+				<%#details%>\item <%& .%><%/details%>	
+				<%#technology_used%>
+				\item Technologies used:
+				<%#tools%><%name%><%^last%>, <%/last%><%/tools%>
+				<%/technology_used%>
+				\end{itemize}
+			}
+		}
+	<%/items%>
+<%/experience%>

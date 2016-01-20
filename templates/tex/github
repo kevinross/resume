@@ -1,0 +1,15 @@
+<%#github_projects%>
+\section{\textsc{Github Projects}}
+	<%#details%>
+		\cvitem{\textbullet}{\textbf{\href{http://github.com/<%project_name%>}{<%project_name%>}}<%#tagline%> - <%& .%><%/tagline%>}
+		\vspace*{-0.15cm}
+		\cvitem{}{
+			{\footnotesize 
+				\begin{itemize}
+				<%#description%>\item <%& .%><%/description%>	
+				\end{itemize}
+			}
+		}
+		\vspace*{-0.5cm}
+	<%/details%>
+<%/github_projects%>

@@ -1,0 +1,249 @@
+{
+	"settings": {
+		"glyphicons" : true
+	},
+	"firstname": "Kevin",
+	"familyname": "Ross",
+	"address": "Ottawa, ON, Canada",
+	"raw_website": "http://kevinross.name",
+	"linkedin_id": "kevinrossdev",
+	"github_id": "kevinross",
+	"bio_data": {
+		"email": "me @ kevinross.name",
+		"phone": "+1 (613) 762-0375",
+		"stars": ["Python", "Java", "Ruby", "PHP", "C#", "C", "ARM Embedded"],
+		"github_projects": {
+			"details": [
+				{
+					"project_name": "kevinross/ACRemote",
+					"tagline": "Home automation on a budget",
+					"description": [
+						"After being unable to reproduce IR codes for my air conditioner, I instead poke buttons on the remote control itself",
+						"Software: C# daemon with JSON-RPC and RESTful endponts",
+						"Hardware: transistor controlled relays via GPIO on a Raspberry Pi 2",
+						"Will ultimately gather data on environment for future automation via rules"
+					]
+				},
+				{
+					"project_name": "kevinross/vdeploy",
+					"tagline": "VM deployment bikeshed",
+					"description": [
+						"Deploys Xen PV-VMs with fewer assumptions and restrictions",
+						"Deploys packages, runs scripts, extracts arbitrary files, joins a samba4 domain, and generates keytabs for VM services if desired",
+						"Registers the VM as a service in systemd in Dom-0 so VMs can be interpreted as services and therefore have dependencies",
+						"VMs share a base image and use overlayfs to store configuration and packages separately"
+					]
+				},
+				{
+					"project_name": "kevinross/jsonrpc",
+					"tagline": "JSONRPCv2",
+					"description": [
+						"Wrote an implementation of JSONRPCv2 inspired by Java's RMI",
+						"Python, Java, and JavaScript clients with a Python server",
+						"extracted from HvsI @ <<https://github.com/kevinross/hvsi>>"]
+				},
+				{
+					"project_name": "kevinross/hvsi",
+					"tagline": "Will you survive?",
+					"description": ["Rewrote in Python a PHP app that uOttawa students use to run an annual zombie-themed game",
+							"Used by around 100 people each year"]
+				},
+				{
+					"project_name": "kevinross/techreport",
+					"tagline": "Technical reports are anti-DRY",
+					"description": ["Wrote a makefile that brought together a bunch of disparate tools to reduce the workload of writing a technical report"]
+				}
+			]
+		},
+		"skills": {
+			"details": [
+				{
+					"type": "Languages",
+					"items": [
+						"Python",
+						"Ruby",
+						"Java",
+						"CoffeeScript",
+						"Javascript",
+						"PHP",
+						"C",
+						"C++",
+						"C#"
+					]
+				},
+				{
+					"type": "Web",
+					"items": [
+						"bottlepy",
+						"Wordpress",
+						"Ruby on Rails",
+						"Django",
+						"HTML",
+						"CSS"
+					]
+				},
+				{
+					"type": "Databases",
+					"items": [
+						"MySQL | MariaDB",
+						"SQLite"
+					]
+				},
+				{
+					"type": "IDEs",
+					"items": [
+						"PyCharm", "RubyMine", "IntelliJ", "Visual Studio 2010+2012", "XCode", "PHPStorm"
+					]
+				},
+				{
+					"type": "OSs",
+					"items": [
+						"OS X 10.5, 10.8, 10.9", "Ubuntu 10.04, 10.10", "Fedora 19 - 23", "Windows XP - 10", "Contiki", "Raspbian"
+					]
+				},
+				{
+					"type": "Tools",
+					"items": [
+						"git", "SVN", "xen (xm, xl)", "VMware (Fusion, Workstation, ESXi)", "VirtualBox", "bash", "ant"
+					]
+				},
+				{
+					"type": "Platforms",
+					"items": [
+						"x86/64", "ARM Embedded (STM32)", "Raspberry Pi"
+					]
+				}
+			]
+		},
+		"education": {
+			"show_gpa": false,
+			"schools": [
+				{
+					"major": "Computer Programming",
+					"institution": "Algonquin College",
+					"graduation_year": "2016*",
+					"meta": "eligible to graduate (all courses completed)",
+					"degree": "Diploma"
+				},
+				{
+					"major": "Computer Science",
+					"institution": "University of Ottawa",
+					"graduation_year": 2012,
+					"meta": "completed 2nd year",
+					"degree": "Degree Incomplete"
+				}
+			]
+		},
+		"experience": {
+			"items": [
+				{
+					"title": "Web Developer",
+					"location": "Ottawa",
+					"from": "Oct. 2015",
+					"to": "Oct. 2015",
+					"details": [
+						"Put together a basic i18n and bootstrap3-enabled Django site for a student federation exec candidate"
+					],
+					"technology_used": {
+						"tools": [
+							"Django",
+							"Bootstrap3",
+							"Heroku"
+						]
+					}
+				},
+				{
+					"title": "Student Web Developer",
+					"organisation": "Bank of Canada",
+					"location": "Ottawa",
+					"from": "Jan. 2015",
+					"to": "Aug. 2015",
+					"details": [
+						"Maintained Wordpress sites on an agile team",
+						"Designed and implemented Wordpress plugins and a generic shortcode filter",
+						"Wrote BDD tests with Behat",
+						"Developed PHPUnit tests"
+					],
+					"technology_used": {
+						"tools": [
+							"Wordpress",
+							"Behat",
+							"PHPUnit",
+							"XDebug",
+							"ant"
+						]
+					}
+				},
+				{
+					"title": "Student",
+					"organisation": "Algonquin College",
+					"location": "Ottawa",
+					"from": "Sept. 2014",
+					"to": "Dec. 2014",
+					"details": [
+						"Capstone course for the program, similar to ARI (projects provided by ARI in some cases such as this one)",
+						"Researched and developed drivers for sensors on a STM32-based prototype board running Contiki",
+						"Ported existing, client-provided HAL to standard STM32 HAL",
+						"Ported startup code from IAR to GCC/Eclipse based on existing work",
+						"Began work on adapting Contiki network drivers to the board's chipset",
+						"Team lead for the project"
+					],
+					"technology_used": {
+						"tools": [
+							"IAR", "Eclipse", "GCC", "OpenOCD", "Contiki", "gdb"
+						]
+					}
+				},
+				{
+					"title": "Research Assistant",
+					"organisation": "ARI, Algonquin College",
+					"location": "Ottawa",
+					"from": "May. 2014",
+					"to": "Aug. 2014",
+					"details": [
+						"Researched and developed a web application for Deporte Conex <<http://www.deporteconex.com>>, designed to connect staff at US colleges with students outside the US",
+						"Team lead for the project",
+						"Used agile development methodology augmented with initial waterfall approach"
+					],
+					"technology_used": {
+						"tools": [
+							"Ruby on Rails",
+							"Bootstrap2 HTML5, CSS",
+							"CoffeeScript"
+						]
+					}
+				},
+				{
+					"title": "Vice President, Information Technology",
+					"organisation": "Computer Science Student Association, University of Ottawa",
+					"location": "Ottawa",
+					"from": "May. 2010",
+					"to": "Dec. 2010",
+					"details": [
+						"Streamlined the upgrade process for several software projects in use",
+						"Managed an Ubuntu LAMP-based server"
+					],
+					"technology_used": {
+						"tools": [
+							"Linux",
+							"Apache",
+							"MySQL",
+							"Drupal",
+							"Google Apps"
+						]
+					}
+				}
+			]
+		},
+		"extra_curricular": {
+			"items": [
+				"Home lab (as in linux server) owner",
+				"Snowboarder",
+				"Redditor",
+				"Hacker Newsie",
+				"Avid reader of science (non-)fiction",
+				"Researches... pretty much everything to do with technology and medicine"
+			]
+		}
+	}
+}

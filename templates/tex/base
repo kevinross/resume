@@ -1,0 +1,123 @@
+{{=<% %>=}}
+\documentclass[11pt,letterpaper]{moderncv}
+
+\moderncvtheme[black]{classic}
+
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.8]{geometry}
+\usepackage{needspace}
+
+<%#bio_data%>
+\firstname{<%firstname%>}
+\familyname{\mbox{<%familyname%>}}
+\address{<%address%>}
+\title{\small <%#stars%><%#items%><%name%><%^last%> $\star$ <%/last%><%/items%><%/stars%>}
+<%#phone%>\phone{<%.%>}<%/phone%>
+<%#email%>\email{<%.%>}<%/email%>
+<%#raw_website%>\homepage{<%& .%>}<%/raw_website%>
+<%#linkedin_id%>\social[linkedin]{<%& .%>}<%/linkedin_id%>
+<%#github_id%>\social[github]{<%& .%>}<%/github_id%>
+
+% the ConTeXt symbol
+\def\ConTeXt{%
+  C%
+  \kern-.0333emo%
+  \kern-.0333emn%
+  \kern-.0667em\TeX%
+  \kern-.0333emt}
+
+% command and color used in this document, independently from moderncv 
+\definecolor{see}{rgb}{0.5,0.5,0.5}% for web links
+\newcommand{\up}[1]{\ensuremath{^\textrm{\scriptsize#1}}}% for text subscripts
+\renewcommand{\labelitemi}{$\circ$}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\vspace*{-1cm}
+
+<%#summary%>
+\section{\textsc{Qualifications}}
+	<%#points%>
+		\cvitem{\textbullet}{<%& .%>}
+	<%/points%>
+<%/summary%>
+
+section1
+
+section2
+
+\needspace{2\baselineskip}
+
+section3
+
+section4
+
+section5
+
+<%#acad_achievements%>
+\section{\textsc{Academic Achievements}}
+	<%#items%>
+		% \cvitem{LHS}{RHS}
+		\cvitem{\textbullet}{<%& .%>}
+	<%/items%>
+<%/acad_achievements%>
+
+<%#grad_courses%>
+\section{\textsc{Graduate courses taken}}
+	<%#rows%>
+		\cvlistdoubleitem
+		<%#columns%>{<%#name%>\href{<%& url%>}{<%name%>}<%/name%>}<%/columns%>	
+	<%/rows%>
+<%/grad_courses%>
+
+<%#undergrad_courses%>
+\section{\textsc{Undergraduate courses taken}}
+	<%#rows%>
+		\cvlistdoubleitem
+		<%#columns%>{<%#name%>\href{<%& url%>}{<%name%>}<%/name%>}<%/columns%>	
+	<%/rows%>
+<%/undergrad_courses%>
+
+<%#research_experience%>
+\section{\textsc{Research Experience}}
+	<%#items%>
+		\cventry{<%from%> - <%to%>}{<%title%>}{<%organisation%>}{<%location%>}{}{
+			{\footnotesize 
+				\begin{itemize}
+				<%#points%>\item <%& .%><%/points%>	
+				\end{itemize}
+			}
+		}
+	<%/items%>
+<%/research_experience%>
+
+<%#patents%>
+\section{\textsc{Patents}}
+	<%#items%>
+		\cvitem{<%patent_id%>}{\textit{\href{<%url%>}{<%title%>}}<%#issuance_date%>, issued <%issuance_date%><%/issuance_date%>.}
+	<%/items%>
+<%/patents%>
+
+<%#papers%>
+\section{\textsc{Publications}}
+	<%#items%>
+		\cvitem{\textbullet}{<%authors%>, \textit{\href{<%url%>}{<%title%>}} <%& misc%>}
+	<%/items%>
+<%/papers%>
+
+<%#memberships%>
+\section{\textsc{Memberships}}
+	<%#committees%>
+		\cvitem{\textbullet}{<%& .%>}
+	<%/committees%>
+<%/memberships%>
+\newpage
+section6
+
+<%/bio_data%>
+\end{document}
+%% end of file `page.tex'.
+

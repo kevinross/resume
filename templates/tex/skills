@@ -1,0 +1,6 @@
+<%#skills%>
+\section{\textsc{Technical Skills}}
+	<%#details%>
+		\cvitem{\textbullet}{\textbf{<%type%>}: <%#items%><%name%><%^last%>, <%/last%><%/items%>}
+	<%/details%>
+<%/skills%>

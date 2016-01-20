@@ -1,0 +1,8 @@
+	{{#extra_curricular}}
+	<h2><div class="icon-music icon-square"></div> ##extra_curricular##</h2>
+	<ul>
+		{{#items}}
+		<li>{{{.}}}</li>
+		{{/items}}
+	</ul>
+	{{/extra_curricular}}
