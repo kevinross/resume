@@ -108,7 +108,7 @@
 				{
 					"type": "Tools",
 					"items": [
-						"git", "SVN", "xen (xm, xl)", "VMware (Fusion, Workstation, ESXi)", "VirtualBox", "bash", "ant"
+						"Jira", "git", "SVN", "xen (xm, xl)", "VMware (Fusion, Workstation, ESXi)", "VirtualBox", "bash", "ant"
 					]
 				},
 				{
@@ -125,15 +125,14 @@
 				{
 					"major": "Computer Programming",
 					"institution": "Algonquin College",
-					"graduation_year": "2016*",
-					"meta": "eligible to graduate (all courses completed)",
+					"graduation_year": "2015",
 					"degree": "Diploma"
 				},
 				{
 					"major": "Computer Science",
 					"institution": "University of Ottawa",
 					"graduation_year": 2012,
-					"meta": "completed 2nd year",
+					"meta": "completed 2nd year, withdrew for financial reasons",
 					"degree": "Degree Incomplete"
 				}
 			]
@@ -146,7 +145,7 @@
 					"from": "Oct. 2015",
 					"to": "Oct. 2015",
 					"details": [
-						"Put together a basic i18n and bootstrap3-enabled Django site for a student federation exec candidate"
+						"Put together an i18n and bootstrap3-enabled Django site for a student federation exec candidate"
 					],
 					"technology_used": {
 						"tools": [
@@ -163,7 +162,7 @@
 					"from": "Jan. 2015",
 					"to": "Aug. 2015",
 					"details": [
-						"Maintained Wordpress sites on an agile team",
+						"Maintained Wordpress sites on an agile team, tracked with Jira",
 						"Designed and implemented Wordpress plugins and a generic shortcode filter",
 						"Wrote BDD tests with Behat",
 						"Developed PHPUnit tests"
@@ -174,6 +173,7 @@
 							"Behat",
 							"PHPUnit",
 							"XDebug",
+							"Jira",
 							"ant"
 						]
 					}

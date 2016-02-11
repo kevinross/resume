@@ -2,6 +2,6 @@
 \section{\textsc{Education}}
 %    \cventry{years}{degree/job title}{institution/employer}{localization}{grade}{description}
 <%#schools%>
-\cventry{<%graduation_year%>}{<%degree%><%#major%> <%major%><%/major%>}{<%institution%>}{<%meta%>}{}{<%#show_gpa%>GPA: <%gpa%><%/show_gpa%>}{}
+\cventry{<%graduation_year%>}{<%#degree%><%degree%><%/degree%><%#major%>, <%major%><%/major%>}{<%institution%>}{<%meta%>}{}{<%#show_gpa%>GPA: <%gpa%><%/show_gpa%>}{}
 <%/schools%>
 <%/education%>
